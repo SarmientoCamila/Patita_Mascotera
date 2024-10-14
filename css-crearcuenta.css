@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+
+  background: #85bfd5;
+ 
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+form {
+  background: white;
+  padding: 40px 0;
+  box-shadow: 0 0 6px 0 rgba(0, 137, 161, 0.8);
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+form .grupo {
+  position: relative;
+  margin: 45px;
+}
+
+input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #49454567;
+}
+
+input:focus {
+  outline: none;
+  color: black;
+}
+
+label {
+  color: #49454567;
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background:#61c3f0;
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+input:focus ~ .barra::before {
+  width: 100%;
+}
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #d12525;
+  padding-top: 20px;
+}
+
+button {
+  
+  background: #67b9f0;
+  border-radius: 2rem;
+  border-bottom-left-radius: 0;
+  border: 0.1rem solid black;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}

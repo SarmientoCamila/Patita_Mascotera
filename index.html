@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patita Mascotera PetShop</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="https://kit.fontawesome.com/4d30dfda64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo"><i class="fas fa-paw"></i> Patita Mascotera</a>
+
+    <nav class="navbar">
+      <a href="#home"> Inicio </a>
+      <a href="#shop"> Tienda </a>
+      <a href="#servicios"> Servicios </a>
+      <a href="#contacto"> Contacto </a>
+      <a href="sucursales.html"> Sucursales </a>
+    </nav>
+
+    <form action="" class="login-form">
+      <h3>Iniciar Sesion</h3>
+      <input type="email" name="" placeholder="email" id="" class="box" />
+      <input type="password" name="" placeholder="password" id="" class="box" />
+      <div class="remember">
+        <input type="checkbox" name="" id="remember-me" />
+        <label for="remember-me">Recordar</label>
+      </div>
+      <input type="submit" value="Iniciar Sesion" class="btn" />
+      <div class="links">
+        <a href="#">Olvide Contraseña</a>
+        <a href="crearcuenta.html">Crear Cuenta</a>
+      </div>
+    </form>
+
+    <div class="iconos">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Buscar..." />
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="img/juguetes07.png" alt="" />
+        <div class="content">
+          <h3>JUGUETE CUERDA DOGZILLA</h3>
+          <div class="precio">$1.744</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="img/alimento03.png" alt="" />
+        <div class="content">
+          <h3>OLD PRINCE PERRO ADULTO</h3>
+          <div class="precio">$4.683</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="img/g-juguete04.png" alt="" />
+        <div class="content">
+          <h3>TUNEL PARA GATO 150 CM</h3>
+          <div class="precio">$5.438</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="img/reptil-accesorio04.png" alt="" />
+        <div class="content">
+          <h3>CALEFACTOR DE TERRARIO</h3>
+          <div class="precio">$9.880</div>
+        </div>
+      </div>
+
+      <p>Subtotal $21.745</p>
+      <p>Total $21.745</p>
+      <a href="#" class="boton-compra"> Comprar</a>
+    </div>
+  </header>
+
+  <section class="inicio" id="home">
+    <div class="contentenedor">
+      <h3>Patita Mascotera</h3>
+      <span>
+        Bienvenidos a Nuestro PetShop, las mascotas son nuestra pasión.</span>
+      <span>Trabajamos todos los días para mejorar su calidad de vida,
+        brindandoles productos adecuados y de excelente calidad.</span>
+      <!-- <span>Con cualquier orden de compra estas ayudando a fundaciones protectoras de animales.</span>   -->
+
+      <a href="#producto-perro" class="btn-inicio">Nuestra tienda</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="grilla">
+      <div class="fa-solid fa-credit-card">
+        <a href="#">
+          <span> Medios de pago</span>
+        </a>
+      </div>
+      <div class="fa-solid fa-shop">
+        <span>Retiro gratis en cualquiera de nuestras sucursales</span>
+      </div>
+      <div class="fa-solid fa-truck-fast">
+        <span> Envío en el día en CABA y GBA</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="slider">
+      <ul>
+        <li>
+          <img src="img/carousel_1.png" />
+        </li>
+        <li>
+          <img src="img/carousel_2.png" />
+        </li>
+        <li>
+          <img src="img/carousel_3.png" />
+        </li>
+        <li>
+          <img src="img/carousel_4.png" />
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="nav" id="shop">
+      <h5 class="titulos-h5"><span>Nuestra</span> Tienda</h5>
+      <div class="contenedor-nav">
+        <button class="boton perrobtn active" id="boton-perro">
+          <span>Perros</span>
+        </button>
+        <button class="boton gatobtn" id="boton-gato">
+          <span>Gatos</span>
+        </button>
+        <button class="boton avebtn" id="boton-aves">
+          <span>Aves</span>
+        </button>
+        <button class="boton reptilbtn" id="boton-reptiles">
+          <span>Reptiles</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="botones">
+      <span>Consulta los precios en pesos y dolares</span>
+      <input type="button" value="" class="bandera" id="bandera-arg" />
+
+      <input type="button" value="" class="bandera2" id="bandera-usd" />
+    </div>
+
+    <!-- categoria perro  -->
+
+    <div id="producto-perro">
+      <h4>Perros</h4>
+
+      <div class="content" id="perro">
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">BOLSO MALETIN TRANSPORTADOR N°2</span>
+            <span class="precio" id="bolso-n2"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> BOLSO MALETIN TRANSPORTADOR N°3</span>
+            <span class="precio" id="bolso-maletin"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> TRANSPORTADORA GIPSY N°1</span>
+            <span class="precio" id="transportadora-mascota"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta paseo-viaje">
+          <img src="./img/paseo-viaje05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              PRETAL PARA PERRO HELIOS SPLASH OUTDOOR</span>
+            <span class="precio" id="pretal"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> PRETAL PERRO PREMIUM ACOLCHADO</span>
+            <span class="precio" id="pretal-premium"></span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> PECHERA ARNES TELA CAMUFLADA</span>
+            <span class="precio" id="pechera"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje08.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ARNES PARA PERRRO S/M CHEWBACCA</span>
+            <span class="precio" id="arnes"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje09.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> COLLAR DE AHORQUE CADENA SOLDADA</span>
+            <span class="precio" id="collar-perro"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje010.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> CORREA EXTENSIBLE PARA PERRO</span>
+            <span class="precio" id="correa-exten"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje011.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> FIDA CORREA EXTENSIBLE </span>
+            <span class="precio" id="correa-fida"></span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje012.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> CHAPITA IDENTIFICATORIA CHARMS DAISY</span>
+            <span class="precio" id="chapita-daisy"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje013.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">CHAPITA IDENTIFICATORIA FRIEND BORDER COLLIE</span>
+            <span class="precio" id="chapita-collie"></span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje014.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">CHAPITA IDENTIFICATORIA FRIEND WHITE BULL TERRIER</span>
+            <span class="precio" id="chapita-terrier"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje015.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              CHAPITA IDENTIFICATORIA FRIEND ENGLISH BULLDOG</span>
+            <span class="precio" id="chapita-bulldog"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje016.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> CHAPITA BASIC XL BONE CHROMED BRASS </span>
+            <span class="precio" id="chapita-basic"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje017.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> CHAPITA GOLD CIRCLE BLACK</span>
+            <span class="precio" id="chapita-negra"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/paseo-viaje018.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              CHAPITA IDENTIFICATORIA CHIC STRASS PAW</span>
+            <span class="precio" id="chapita-paw"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> JUGUETE PARA PERRO KONG EXTREME</span>
+            <span class="precio" id="juguete-kong"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> JUGUETE KONG GOODIE BONE</span>
+            <span class="precio" id="kong-goodie"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JUGUETE DISPENSADOR GIGWI BULB RUBBER</span>
+            <span class="precio" id="juguete-dispensador"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JUGUETE PARA PERRO GIGWI JUMBALL BASQUETBALL</span>
+            <span class="precio" id="juguete-jumball"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">PELOTA KONG MEDIUM/LARGE</span>
+            <span class="precio" id="pelota-kong"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JUGUETE PARA PERRO NEUMATICO CAUCHO NEGRO</span>
+            <span class="precio" id="juguete-neumatico"></span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> JUGUETE CUERDA DOGZILLA</span>
+            <span class="precio" id="juguete-cuerda"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes08.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">SET DE PELOTAS PARA PERRO</span>
+            <span class="precio" id="set-pelota"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/juguetes09.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> JUGUETE PARA PERRO JOHNNY STICK</span>
+            <span class="precio" id="juguete-perro"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/juguetes010.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              JUGUETE PARA PERRO CHUCKIT FETCH WHEEL</span>
+            <span class="precio" id="juguete-wheel"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              MAINTENANCE CRIADORES PERRO ADULTO X 22 KG</span>
+            <span class="precio" id="alimento-criadores"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              OLD PRINCE NOVELES CYA ADULTOS MED&LARGE X 15 KG</span>
+            <span class="precio" id="alimento-old"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              OLD PRINCE PERRO ADULTO RECETA ORIGINAL X 20 KG</span>
+            <span class="precio" id="old-prince-perro"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> PRO PLAN PERRO ADULTO MEDIANO X 15 KG</span>
+            <span class="precio" id="proplan-adulto"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              EXCELLENT SMART FORMULA PERRO ADULTO 20 KG</span>
+            <span class="precio" id="excellent"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">DOG CHOW S/ COLORANTE ADULTO M/G X 21 KG</span>
+            <span class="precio" id="dogchow"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> DR ROMERO PERRO ADULTO X 15 KG</span>
+            <span class="precio" id="dr-romero"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento08.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              PEDIGREE CACHORRO NUTRI DEFENSE X 21 + 3 KG</span>
+            <span class="precio" id="pedigree"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="./img/alimento09.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> ROYAL CANIN PERRO HIPOALERGÉNICO 10KG</span>
+            <span class="precio" id="royal"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categoria gato -->
+
+    <div class="ocultar" id="producto-gato">
+      <h4 class="">Gatos</h4>
+
+      <div class="content" id="gato">
+        <div class="tarjeta">
+          <img src="./img/g-paseo-viaje01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">COLLAR ELÁSTICO REFRACTARIO PARA GATOS</span>
+            <span class="precio" id="collar-elastico"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-paseo-viaje02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> COLLAR CUERO CON STRASS</span>
+            <span class="precio" id="collar-cuero"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-paseo-viaje03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> CONJ. CORREA-PRETAL GATO 10 MM</span>
+            <span class="precio" id="correa-pretal"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-paseo-viaje04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              BOLSO TRANSPORTADOR PARA GATO IMPERMEABLE</span>
+            <span class="precio" id="bolso-impermeable"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-paseo-viaje05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> COLLAR ELASTICO GATOS LEOPARDO</span>
+            <span class="precio" id="collar-leopardo"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              EXCELLENT SMART GATO ADULTO POLLO Y ARROZ 7.5 KG</span>
+            <span class="precio" id="excellent-gato"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              CAT CHOW SIN COLORANTES ADULTO CARNE X 15 KG</span>
+            <span class="precio" id="catchow-alimento"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              CAT CHOW SIN COLORANTES ADULTOS PESCADO</span>
+            <span class="precio" id="catchow-adulto"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> OLD PRINCE EQUILIBRIUM GATO ADULTO </span>
+            <span class="precio" id="old-prince-gato"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              AGILITY CATS EN LATA SABOR SARDINA X 340 GR</span>
+            <span class="precio" id="lata-sabsard"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-alimento07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> AGILITY CATS EN LATA SABOR POLLO</span>
+            <span class="precio" id="lata-sabpollo"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              JUGUETE PARA GATOS GIGWI FEATHER TEASER BLUE FISH+YELLOW
+              BUTTERF</span>
+            <span class="precio" id="juguete-gigwi"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              JUGUETE PARA GATO VERTIGO CAROUSEL FERPLAST</span>
+            <span class="precio" id="juguete-vertigo"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> PELOTA RUGBY 110 MM THERMO PLASTIC</span>
+            <span class="precio" id="pelota-rugby"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> TUNEL GATO 50 CM</span>
+            <span class="precio" id="tunel-gato"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo"> RASCADOR PARA GATO POSTE NRO1</span>
+            <span class="precio" id="rascador-gato"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              RASCADOR PARA GATOS MULTI ESPACIO AZUL 112 CM</span>
+            <span class="precio" id="casita-rascador"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/g-juguete07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              CUCHA DE INTERIOR/MOISES PARA GATO TUBO DE PELUCHE,
+              LAVABLE</span>
+            <span class="precio" id="cucha-gato"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categotia aves -->
+
+    <div class="ocultar" id="producto-ave">
+      <h4 class="">Aves</h4>
+
+      <div class="content" id="ave">
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULON LORO CON PIE Y CONTENEDOR</span>
+            <span class="precio" id="jaula-loro"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULON P/ LOROS BOMBE 78X60X156 (A02)</span>
+            <span class="precio" id="jaula-bombe"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULA LORO ARCO GRANDE 64X54X96</span>
+            <span class="precio" id="jaula-arco"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULA PAJARERA REDONDA GRANDE PINTADA</span>
+            <span class="precio" id="jaula-pajarera"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULA PARA PAJAROS FANTASIA GRANDE DORADA</span>
+            <span class="precio" id="jaula-dorada"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">JAULA PARA AVES MODELO IMPERIAL 2 47 X 36 X 68 CM</span>
+            <span class="precio" id="jaula-blanca"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">PORTA PASTA DELUXE</span>
+            <span class="precio" id="porta-pasta"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio08.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">BEBEDERO CAPRI 500 CC CANARIOS/EXOT</span>
+            <span class="precio" id="bebedero"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio09.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">COMEDERO TRANSPARENTE C/REJILLA 20 CM</span>
+            <span class="precio" id="comedero"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio010.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">COMEDERO ACRILICO DALIA 10 CM</span>
+            <span class="precio" id="comedero-acrilico"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-accesorio011.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">EXPENDEDOR SISAL/COCO/JUTA</span>
+            <span class="precio" id="expendedor"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">MIX PARA PERIQUITOS NELSONI RANCH X 750 GR</span>
+            <span class="precio" id="mix-periquitos"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">MIJO CON VITAMINAS PARA AVE NELSONI RANCH X 750 GR</span>
+            <span class="precio" id="mijo"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALIMENTO NUTRIBITS PARA LORO</span>
+            <span class="precio" id="alimento-loro"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">SUPLEMENTO ALIMENTARIO MIL COLORES PARA AVES PASTA
+              AMARILLA</span>
+            <span class="precio" id="suplemento-aves"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">MIX VEGGIE DE VEGETALES AVISIN PARA AVES X 200 GRS
+              -ZOOTEC-</span>
+            <span class="precio" id="mix-vegetales"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALPISTE VITAMINADO PARA AVES BOLSA DE 1KG</span>
+            <span class="precio" id="alpiste"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/ave-alimento07.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">MIX DE FRUTAS PARA AVES X 150 GRS</span>
+            <span class="precio" id="mix-frutas"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categoria reptiles -->
+
+    <div class="ocultar" id="producto-reptiles">
+      <h4 class="">Reptiles</h4>
+
+      <div class="content" id="ave">
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">TORTUGUERA ISLA MEDIANA C/PALMERA</span>
+            <span class="precio" id="isla-tortuga"></span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ROCA TERMICA GRANDE PARA REPTILES</span>
+            <span class="precio" id="roca-termica"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">CLAMP LAM SAFETY-PROTECTOR 25 CM</span>
+            <span class="precio" id="clamp"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">CALEFACTOR PARA TERRARIO REPTICARE STANDARD</span>
+            <span class="precio" id="calefactor"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">TURTLE DOCK SMAILL-ISLA</span>
+            <span class="precio" id="isla"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-accesorio06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">TORTUGUERA ISLA MINI C/PALMERA</span>
+            <span class="precio" id="mini-isla"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento01.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">LABCON CLUB JABUTTI/MORROCOY X 300 GRS</span>
+            <span class="precio" id="labcon-club"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento02.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">
+              ALIMENTO PARA TORTUGAS DE AGUA JÓVENES ALCON REPTOLIFE BABY
+            </span>
+            <span class="precio" id="alimento-tortuga"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento03.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALIMENTO NUTRAFIN BASIX TORTUGA PELLETS X 20 GRS
+            </span>
+            <span class="precio" id="alimento-nutrafin"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento04.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALIMENTO PRODAC TARTAFOOD GAMMARUS 50ML
+            </span>
+            <span class="precio" id="alimento-prodac"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento05.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALCON REPTOLIFE X 75 GR </span>
+            <span class="precio" id="reptolife"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <img src="./img/reptil-alimento06.png" alt="" />
+          <div class="informacion">
+            <span class="titulo">ALCON REPTOLIFE X 30 GR </span>
+            <span class="precio" id="alcon-rep"> </span>
+            <button class="compra">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <h5 class="titulos-h5"><span>Nuestros</span> Servicios</h5>
+
+    <div class="box-contenedor">
+      <div class="box paseador">
+        <i class="fas fa-dog"></i>
+        <h3>Paseadores de perros</h3>
+
+        <a href="#" class="boton serv-petshop"><span>Mas Información</span></a>
+      </div>
+
+      <div class="box adiestrador">
+        <i class="fas fa-cat"></i>
+        <h3>Adiestrador</h3>
+        <a href="#" class="boton serv-petshop"><span>Mas Información</span></a>
+      </div>
+
+      <div class="box peluqueria">
+        <i class="fas fa-bath"></i>
+        <h3>Baños y Peluquería</h3>
+        <a href="#" class="boton serv-petshop"><span>Mas Información</span></a>
+      </div>
+
+      <div class="box veterinarias">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Veterinarias</h3>
+        <a href="#" class="boton serv-petshop"><span>Mas Información</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contactos" id="contacto">
+    <form action="" class="contenedor-contacto">
+      <h3>Contacto</h3>
+      <span>Nuestros numeros de contacto</span>
+      <p>Teléfono: 0810------- / Whatsapp: +54 9 1 --------8</p>
+
+      <p>También podes enviarnos un e-mail a: info@patitamascotera.com</p>
+
+      <p>Enviá tu consulta por este medio y te contactaremos a la brevedad</p>
+
+      <input type="text" placeholder="Nombre y Apellido" class="box" />
+      <input type="email" placeholder="Email" class="box" />
+      <input type="number" placeholder="Numero de contacto" class="box" />
+      <textarea name="" placeholder="Su consulta..." id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Enviar" class="btn-inicio" />
+    </form>
+  </section>
+
+  <footer>
+    <div class="foot1">
+        <div class="footer-content">
+            <div class="logo-section text-center">
+                <h1 class="logo parte-pie">
+                    <i class="fa-solid fa-paw" style="color: #b3e5f6;"></i>Patita Mascotera
+                </h1>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li class="nav-menu-item">
+                        <a href="#shop" class="nav-menu-link">Tienda</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#servicios" class="nav-menu-link">Servicios</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#contacto" class="nav-menu-link">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#home" class="nav-menu-return">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                            </svg>
+                            Volver Arriba
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="social-icons">
+                <div class="social-item">
+                    <a href="https://www.instagram.com/patitamascotera.arg">
+                        <i class="fa-brands fa-instagram" style="color: #b3e5f6;"></i>
+                    </a>
+                    <span>patitamascotera.arg</span>
+                </div>
+                <div class="social-item">
+                    <a href="https://api.whatsapp.com/send/?phone=1133252886">
+                        <i class="fa-brands fa-whatsapp" style="color: #b3e5f6;"></i>
+                    </a>
+                    <span>+54 9 11 - - - - - - 8</span>
+                </div>
+                <div class="social-item">
+                    <a href="mailto:info@patitamascotera.com">
+                        <i class="fa-solid fa-envelope" style="color: #b3e5f6;"></i>
+                    </a>
+                    <span>info@patitamascotera.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="app.js"></script>
+  <script src="boton-nav.js"></script>
+</body>
+
+</html>
